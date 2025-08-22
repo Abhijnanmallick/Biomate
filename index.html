@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biomate - Graduation Tuition Institute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Biomate Behala</h1>
+      <p>Your Pathway to Academic Success</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        In essence, graduation tuition institutes provide a comprehensive and personalized approach to 
+        education, aiming to empower students to not only excel academically but also to develop 
+        lifelong learning skills and achieve their career goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses">
+    <div class="container">
+      <h2>Exams We Prepare For</h2>
+
+      <div class="exam-container">
+        <div class="exam">
+          <button class="dropdown-btn">Honours and Pass</button>
+          <div class="dropdown-content">
+            <p>
+              Comprehensive guidance in undergraduate Honours and Pass courses with a focus on 
+              concept clarity, exam preparation, and structured notes to ensure top performance 
+              in university examinations.
+            </p>
+          </div>
+        </div>
+
+        <div class="exam">
+          <button class="dropdown-btn">MSc Entrance</button>
+          <div class="dropdown-content">
+            <p>
+              Specialized coaching for MSc entrance exams across reputed universities. Our curriculum 
+              emphasizes problem-solving, advanced concepts, and practice tests to build exam confidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="exam">
+          <button class="dropdown-btn">GATE, BET</button>
+          <div class="dropdown-content">
+            <p>
+              Rigorous preparation modules for national-level exams like GATE and BET, including 
+              mock tests, previous year paper analysis, and personalized mentoring to ensure 
+              competitive edge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teacher Section -->
+  <section class="teacher">
+    <div class="container">
+      <h2>Our Mentor</h2>
+      <div class="teacher-info">
+        <img src="images/subhra_sir.png" alt="Subhra Sir">
+        <div>
+          <h3>Subhra Sir</h3>
+          <p>Experienced educator dedicated to guiding students towards academic excellence and success in competitive exams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <span class="icon">📞</span>
+          <h3>Call</h3>
+          <p><a href="tel:+918240978503">+91 8240978503</a></p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon">💬</span>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/918240978503" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon">📧</span>
+          <h3>Email</h3>
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sub.g.skg@gmail.com" target="_blank">sub.g.skg@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon">📍</span>
+          <h3>Address</h3>
+          <p>2/1 Basudebpur road, Bakultala<br>Kolkata - 700061</p>
+          <p><strong>Landmark:</strong> SBI, Bakultala</p>
+          <p><a href="https://maps.google.com/?q=2/1+Basudebpur+road+Bakultala+Kolkata+700061" target="_blank">📌 View on Map</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Biomate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown toggle
+    const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+    dropdownBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        content.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
+</html>
