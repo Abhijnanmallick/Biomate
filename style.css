@@ -69,6 +69,7 @@ header p {
 
 /* Section Titles */
 h2 {
+  background-color: #0075ff14;
   text-align: center;
   margin-bottom: 15px;
   color: #0077b6;
@@ -97,6 +98,8 @@ h2 {
 .exam {
   flex: 1 1 250px;
   max-width: 300px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .dropdown-btn {
@@ -116,19 +119,26 @@ h2 {
   background: #005f86;
 }
 
+/* Expanded dropdown takes more space */
 .dropdown-content {
   display: none;
-  margin-top: 10px;
+  margin-top: 12px;
   background: #fff;
-  padding: 15px;
+  padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 600px;   /* wider for desktop */
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
 }
 
 .dropdown-content.show {
   display: block;
+  border: 2px solid #0077b6; /* highlight opened exam */
 }
 
 /* Teacher Section */
@@ -212,3 +222,16 @@ footer {
   margin-top: 30px;
   border-radius: 20px 20px 0 0;
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 1080px) {
+  
+
+  /* Contact cards stack vertically */
+  .contact-cards {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  
+}
+
